@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.crm.domain.SaleChanceEntity" table="sale_chance" schema="crm_ssh">
+        <id name="chanId" column="chan_id"/>
+        <property name="chanName" column="chan_name"/>
+        <property name="chanMoney" column="chan_money"/>
+        <property name="chanType" column="chan_type"/>
+        <property name="chanSource" column="chan_source"/>
+        <property name="chanState" column="chan_state"/>
+        <property name="chanLkmId" column="chan_lkm_id"/>
+        <property name="chanLinktime" column="chan_linktime"/>
+        <property name="chanDesc" column="chan_desc"/>
+    </class>
+</hibernate-mapping>

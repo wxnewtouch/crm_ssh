@@ -1,10 +1,13 @@
 package com.crm.domain;
 
-import javax.persistence.*;
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "hibernate_sequence", schema = "crm_ssh")
+@Table(name = "hibernate_sequence", schema = "crm_ssh", catalog = "crm_ssh")
 public class HibernateSequenceEntity {
     private Long nextVal;
 
@@ -34,7 +37,7 @@ public class HibernateSequenceEntity {
 
     private String id;
 
-    @Id
+    @javax.persistence.Id
     public String getId() {
         return id;
     }

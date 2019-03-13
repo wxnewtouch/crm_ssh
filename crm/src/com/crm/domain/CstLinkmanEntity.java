@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "cst_linkman", schema = "crm_ssh")
+@Table(name = "cst_linkman", schema = "crm_ssh", catalog = "crm_ssh")
 public class CstLinkmanEntity {
     private long lkmId;
     private String lkmName;
