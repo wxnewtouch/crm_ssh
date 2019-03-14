@@ -5,7 +5,7 @@ import java.sql.Date;
 import java.util.Objects;
 
 @Entity
-@Table(name = "sale_visit", schema = "crm_ssh", catalog = "")
+@Table(name = "sale_visit", schema = "crm_ssh")
 public class SaleVisitEntity {
     private String visitId;
     private Date visitTime;

@@ -47,5 +47,16 @@
         <mapping class="com.crm.domain.SysUserEntity"/>
         <mapping class="com.crm.domain.SysUserDetailEntity"/>
         <mapping class="com.crm.domain.SysUserRoleEntity"/>
+        <mapping resource="com/crm/domain/BaseDictEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/CstCustomerEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/CstCustomerDetailEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/CstLinkmanEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/HibernateSequenceEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SaleChanceEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SaleVisitEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SysRoleEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SysUserEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SysUserDetailEntity.hbm.xml"/>
+        <mapping resource="com/crm/domain/SysUserRoleEntity.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

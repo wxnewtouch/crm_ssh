@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.crm.domain.CstCustomerDetailEntity" table="cst_customer_detail" schema="crm_ssh">
+        <id name="custId" column="cust_id"/>
+        <property name="custRegion" column="cust_region"/>
+        <property name="custZip" column="cust_zip"/>
+        <property name="custAddress" column="cust_address"/>
+        <property name="custFax" column="cust_fax"/>
+        <property name="custWebsite" column="cust_website"/>
+        <property name="custLicence" column="cust_licence"/>
+        <property name="custCorporation" column="cust_corporation"/>
+        <property name="custCapital" column="cust_capital"/>
+        <property name="custBank" column="cust_bank"/>
+        <property name="custMemo" column="cust_memo"/>
+    </class>
+</hibernate-mapping>

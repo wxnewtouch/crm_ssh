@@ -4,8 +4,9 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="com.crm.domain.HibernateSequenceEntity" table="hibernate_sequence" schema="crm_ssh">
-        <id name="id"/>
-        <property name="nextVal" column="next_val"/>
+    <class name="com.crm.domain.SysRoleEntity" table="sys_role" schema="crm_ssh">
+        <id name="roleId" column="role_id"/>
+        <property name="roleName" column="role_name"/>
+        <property name="roleMemo" column="role_memo"/>
     </class>
 </hibernate-mapping>

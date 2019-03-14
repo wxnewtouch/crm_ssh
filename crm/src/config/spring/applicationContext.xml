@@ -11,10 +11,10 @@
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- 加载数据库连接参数 -->
-	<context:property-placeholder location="classpath:db.properties" />
+	<context:property-placeholder location="classpath:config/db.properties" />
 	
 	<!-- 组件扫描 -->
-	<context:component-scan base-package="cn.itcast.crm"></context:component-scan>
+	<context:component-scan base-package="com.crm"></context:component-scan>
 
 	<!-- 数据库连接池 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -29,7 +29,7 @@
 		<!-- 依赖dataSource -->
 		<property name="dataSource" ref="dataSource"/>
 		<!-- 创建工厂需要加载hibernate映射文件 -->
-		<property name="configLocations" value="classpath:hibernate/hibernate.cfg.xml"></property>
+		<property name="configLocations" value="classpath:config/hibernate/hibernate.cfg.xml"></property>
 	</bean>
 	
 	<!-- 配置hibernateTemplate -->

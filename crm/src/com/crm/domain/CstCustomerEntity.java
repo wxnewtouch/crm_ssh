@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "cst_customer", schema = "crm_ssh", catalog = "")
+@Table(name = "cst_customer", schema = "crm_ssh")
 public class CstCustomerEntity {
     private long custId;
     private String custName;

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "sys_role", schema = "crm_ssh", catalog = "")
+@Table(name = "sys_role", schema = "crm_ssh")
 public class SysRoleEntity {
     private long roleId;
     private String roleName;
